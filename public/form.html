@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Socket.io</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="./css/main.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+
+<body>
+<style>
+* {
+    background-color: white;
+}
+
+</style>
+<!-- 	<h1>Page 1: Form</h1>
+ -->
+ <div class="talk-bubble_form tri-right_form round left-in">
+	 <h1 id = "promptDiv"> Prompt: </h1>  
+
+</div>
+ <div class="talk-bubble_text_form tri-right round right-in">
+<!-- <div class="bright-talk-bubble tri-right round-bright border-bright left-in">
+ -->
+	<form>
+		<input type="text" name="message" maxlength="140">
+		<input type="submit" name="submit" value="Send">
+	</form>
+
+</div>
+	
+	<!-- The socket.io.js file is served automatically by the socket server -->
+	<script src="/socket.io/socket.io.js"></script>
+
+	<script src="./js/form.js"></script>
+
+<!-- 	<script type="text/javascript" src="js/prompts.js"></script>
+ -->
+
+ <audio id="sound2" src="send.mp3" preload="auto"></audio>
+</body>
+</html>
